@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ImageComponent = ({ url }) => {
   return <img src={url} alt='Dropped content' className='w-full rounded' />;
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { DndContext, DragOverlay } from '@dnd-kit/core';
 import Sidebar from './components/SideBar';
 import Canvas from './components/Canvas';

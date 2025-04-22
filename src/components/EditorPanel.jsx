@@ -1,5 +1,3 @@
-import React from 'react';
-
 function EditorPanel({ components, setComponents, selectedId }) {
   const selectedItem = components.find((item) => item.id === selectedId);
 

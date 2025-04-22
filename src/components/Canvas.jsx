@@ -1,4 +1,3 @@
-import React from 'react';
 import { useDroppable } from '@dnd-kit/core';
 import { Resizable } from 're-resizable';
 import TextComponent from './TextComponent';
