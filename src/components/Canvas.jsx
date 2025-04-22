@@ -58,10 +58,35 @@ const Canvas = ({
               <Resizable
                 enable={{
                   right: !previewMode,
+                  left: !previewMode,
                 }}
                 minWidth='50%'
                 maxWidth='100%'
                 size={{ width: '100%', height: 'auto' }}
+                handleStyles={{
+                  right: {
+                    display: !previewMode && isSelected ? 'block' : 'none',
+                    width: '8px',
+                    height: '50%',
+                    top: '25%',
+                    background: '#fff',
+                    border: '2px solid #d1d5db',
+                    borderRadius: '4px',
+                    right: '-4px',
+                    cursor: 'ew-resize',
+                  },
+                  left: {
+                    display: !previewMode && isSelected ? 'block' : 'none',
+                    width: '8px',
+                    height: '50%',
+                    top: '25%',
+                    background: '#fff',
+                    border: '2px solid #d1d5db',
+                    borderRadius: '4px',
+                    left: '-4px',
+                    cursor: 'ew-resize',
+                  },
+                }}
                 onResizeStop={(e, direction, ref) => {
                   const container = ref.parentElement;
                   if (container) {
